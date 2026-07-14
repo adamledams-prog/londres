@@ -1,0 +1,9 @@
+{
+  "name": "mon-voyage-londres",
+  "version": "1.0.0",
+  "description": "Site de préparation pour mon voyage à Londres",
+  "scripts": {
+    "dev": "npx serve . -p 3000 --no-clipboard",
+    "start": "npx serve . -p 3000"
+  }
+}
