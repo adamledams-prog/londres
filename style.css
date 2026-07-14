@@ -11,116 +11,12 @@ body {
   color: #2d2d2d;
 }
 
-/* ===== HERO ===== */
-.hero {
-  position: relative;
-  height: 100vh;
-  min-height: 500px;
-  background: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1470') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(160deg, rgba(0,0,60,0.7) 0%, rgba(0,0,0,0.5) 100%);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  padding: 2rem;
-}
-
-.hero-content .flag {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 1rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-12px); }
-}
-
-.hero-content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  letter-spacing: 2px;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  margin-bottom: 0.5rem;
-}
-
-.hero-content .subtitle {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  font-weight: 300;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-}
-
-.btn-hero {
-  display: inline-block;
-  padding: 0.85rem 2.5rem;
-  background: #cf142b;
-  color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 4px 20px rgba(207,20,43,0.4);
-}
-
-.btn-hero:hover {
-  background: #a80d22;
-  transform: translateY(-3px);
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: #012169;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-.navbar ul li a {
-  display: block;
-  padding: 1rem 1.8rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.navbar ul li a:hover {
-  background: #cf142b;
-  color: #fff;
-}
-
 /* ===== SECTIONS ===== */
 .section {
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .section h2 {
   font-family: 'Playfair Display', serif;
@@ -129,96 +25,11 @@ body {
   color: inherit;
 }
 
-
 .section-desc {
   color: inherit;
   opacity: 0.7;
   margin-bottom: 2.5rem;
   font-size: 1rem;
-}
-
-/* ===== CARDS GRID ===== */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.8rem;
-}
-
-.card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 1.8rem;
-  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
-  border-top: 5px solid transparent;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.14);
-}
-
-.card-red   { border-top-color: #cf142b; }
-.card-blue  { border-top-color: #012169; }
-.card-green { border-top-color: #2ecc71; }
-.card-purple{ border-top-color: #8e44ad; }
-
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1.2rem;
-}
-
-.card-header i {
-  font-size: 1.6rem;
-}
-
-.card-red    .card-header i { color: #cf142b; }
-.card-blue   .card-header i { color: #012169; }
-.card-green  .card-header i { color: #2ecc71; }
-.card-purple .card-header i { color: #8e44ad; }
-
-.card-header h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-/* ===== CHECKLIST ===== */
-.checklist {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.checklist li label {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  cursor: pointer;
-  font-size: 0.92rem;
-  line-height: 1.4;
-  transition: color 0.2s;
-}
-
-.checklist li label:hover {
-  color: #cf142b;
-}
-
-.checklist input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  min-width: 18px;
-  accent-color: #cf142b;
-  margin-top: 2px;
-  cursor: pointer;
-}
-
-.checklist input[type="checkbox"]:checked + span,
-.checklist li label:has(input:checked) {
-  text-decoration: line-through;
-  opacity: 0.5;
 }
 
 /* ===== PLANNING ===== */
