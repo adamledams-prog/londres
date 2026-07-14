@@ -35,7 +35,7 @@ body {
 /* ===== PLANNING ===== */
 .planning-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -163,9 +163,11 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .planning-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 600px) {
-  .hero-content h1 { font-size: 2rem; }
-  .navbar ul li a  { padding: 0.8rem 1rem; font-size: 0.85rem; }
-  .section         { padding: 3rem 1rem; }
-  .info-grid       { padding: 0 1rem 3rem; }
+  .section       { padding: 3rem 1rem; }
+  .planning-grid { grid-template-columns: 1fr; }
 }
